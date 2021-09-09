@@ -1,3 +1,5 @@
+trigger:
+  - '*'
 pool: 
   demands: 
     - npm
@@ -37,7 +39,6 @@ steps:
       command: build
       projects: "**/*.csproj"
     task: DotNetCoreCLI@2
-trigger: 
-  - "*"
+
 variables: 
   buildConfiguration: Release
